@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 
 
@@ -9,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  dateFrom: null;
-  dateTo:null;
+  @Input () dateFrom: null;
+  @Input () dateTo: null;
   startDate: "ВЫБЕРИТЕ ДАТУ НАЧАЛА"
+
+  
 
  
   constructor() {
