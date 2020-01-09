@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="box">
+        <form class="form">
+            <input class="dateInput" type="date" name="dateFrom" id="dateFrom" min="2019-12-31" max="2020-01-31" [(ngModel)]="dateFrom">
+                
+            <input class="dateInput" type="date" name="dateTo" id="dateTo" min="{{dateFrom}}" max="2020-01-31" [(ngModel)]="dateTo">
+                
+        </form>
+        <p>Выбран интервал от {{ dateFrom || "дд.мм.гггг" }} до {{ dateTo || "дд.мм.гггг" }}</p>
+
+    </div>
+</div>

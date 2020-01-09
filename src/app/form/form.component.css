@@ -1,0 +1,22 @@
+.box  {
+    display: inline-block;
+    width: auto;
+}
+
+.container {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
+
+.dateInput {
+    margin-right: 30px;
+}
