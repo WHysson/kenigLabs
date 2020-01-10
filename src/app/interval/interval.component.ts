@@ -1,4 +1,4 @@
-import { Component, Input, Output } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-interval',
@@ -9,6 +9,12 @@ export class IntervalComponent   {
 
   @Input() start: string;
   @Input() end: string;
+  @Output() newItemEvent = new EventEmitter<string>();
+
+  addNewItem(value: string) {
+    this.newItemEvent.emit(value);
+  }
+
   
 
   constructor() { }

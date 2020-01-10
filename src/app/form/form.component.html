@@ -9,7 +9,11 @@
        
                 
         </form>
-       <app-interval [start]="dateFrom" [end] = "dateTo"></app-interval>
+       <app-interval [start]="dateFrom" [end] = "dateTo" (newItemEvent)="addItem($event)"></app-interval>
+       
+       <ul class="list">
+        <li *ngFor="let item of items">{{item}}</li>
+      </ul>
         
 
     </div>

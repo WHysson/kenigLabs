@@ -13,6 +13,12 @@ export class FormComponent implements OnInit {
   @Input () dateTo: null;
   startDate: "ВЫБЕРИТЕ ДАТУ НАЧАЛА"
 
+  items = [];
+
+  addItem(newItem: string) {
+    this.items.push(this.dateFrom, this.dateTo);
+  }
+
   
 
  
